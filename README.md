@@ -29,7 +29,7 @@ Source of the data: <a href = https://www.kaggle.com/datasets/tmdb/tmdb-movie-me
 ![image](https://user-images.githubusercontent.com/29440153/177044151-c7d9bdf0-ce62-4b22-94e0-8405013b76e8.png)
 
 ## Deployment link 
-TBA
+https://movierecommender-rp.herokuapp.com/
 
 ## Contributors
 https://github.com/rohitp1995
