@@ -21,6 +21,7 @@ Source of the data: <a href = https://www.kaggle.com/datasets/tmdb/tmdb-movie-me
 * Clone the github repository 
 * create a virtual environment (python 3.7.2) 
 * run the command ```pip install -r requirements.txt```
+* run the command ```python recommender.py``` to save the pickle files
 * run ```streamlit run app.py```
 
 ## Application Overview
