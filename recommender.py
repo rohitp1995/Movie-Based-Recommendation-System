@@ -38,7 +38,7 @@ class recommend:
             movie_df['tags'] = movie_df['overview'] + movie_df['genres'] + movie_df['keywords'] + movie_df['cast'] + movie_df['crew']
             new_df = movie_df.drop(columns=['overview','genres','keywords','cast','crew'])
             new_df['tags'] = new_df['tags'].apply(lambda x: " ".join(x))
-            pickle.dump(new_df,open('movie_list.pkl','wb'))
+            pickle.dump(new_df,open('model\movie_list.pkl','wb'))
             return new_df
 
         except Exception as e:
@@ -52,7 +52,7 @@ class recommend:
             cv = CountVectorizer(max_features=5000,stop_words='english')
             vector = cv.fit_transform(df['tags']).toarray()
             similarity = cosine_similarity(vector)
-            pickle.dump(similarity,open('similarity.pkl','wb'))
+            pickle.dump(similarity,open('model\similarity.pkl','wb'))
     
         except Exception as e:
             print(e)
